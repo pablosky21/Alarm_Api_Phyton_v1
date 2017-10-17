@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'app_alarm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'Inacap.bd',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'alarm_db_v2',
+        'USER': 'postgres',
+        'PASSWORD': '123asd',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
