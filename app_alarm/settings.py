@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'app_alarm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'alarm_db_v2',
+        'NAME': 'alarm_db_v3',
         'USER': 'postgres',
         'PASSWORD': '123asd',
         'HOST': 'localhost',
