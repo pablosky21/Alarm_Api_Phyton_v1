@@ -34,6 +34,12 @@ class AlarmUsuarios(models.Model):
     alarm_usuario = models.CharField(max_length=255, blank=True, null=True)
     alar_edad = models.IntegerField(blank=True, null=True)
 
+    def NombreUsuario(self):
+        cadena="{0}"
+        return cadena.format(self.alarm_nombre)
+    def __str__(self):
+        return self.NombreUsuario()
+
 class Profesor(models.Model):
     Apellido = models.CharField(max_length=35)
     Nombres = models.CharField(max_length=35)
